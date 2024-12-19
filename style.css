@@ -1,10 +1,8 @@
 body {background-color: #333;}
 div.allthing{width: 280px;margin: 0 auto;display: block;} 
 p {color: #ffffff;}
-.stopp{display: none;background-color: blue;color: #ffffff;}
-.stopp2{display: none;background-color: blue;color: #ffffff;}
-.stopp3{display: none;background-color: blue;color: #ffffff;}
-.gogogoo,.gogogoo2,.gogogoo3{background-color: rgb(10, 124, 25);color:#ffffff;}
+.stopp,.stopp2,.stopp3,.stopp4{display: none;background-color: blue;color: #ffffff;}
+.gogogoo,.gogogoo2,.gogogoo3,.gogogoo4{background-color: rgb(10, 124, 25);color:#ffffff;}
 .btn999{display: flex;}
-.halfAnHourb,.minutes125b,.minutes15b{background-color: #b53d03;color:#ffffff;}
+.halfAnHourb,.minutes125b,.minutes15b,.minutes302b{background-color: #b53d03;color:#ffffff;}
 button{width:100px; height:100px;margin-right: 15px;}
