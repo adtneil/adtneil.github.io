@@ -39,7 +39,7 @@ let time34 = ''
 let nowtime = '1800'
 let nowtime2 = '900'
 let nowtime3 = '85'
-let nowtime3 = '304'
+let nowtime3 = '302'
 let n
 let m
 let o
@@ -164,7 +164,7 @@ function timedown4() {
             audio4.play();
             stop4.style.display = 'none'
             p4.innerHTML = `碧海`
-            nowtime4 = '304'
+            nowtime4 = '302'
 
         }
 
@@ -242,7 +242,7 @@ function gogogo3() {
 }
 
 
-function minutes304() {
+function minutes302() {
     btn4.innerHTML = "倒數中"
     btn4.disabled = true
     stop4.style.display = 'block'
