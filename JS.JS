@@ -161,16 +161,13 @@ function timedown4() {
             clearInterval(pp)
             btn4.disabled = false
             btn4.innerHTML = "star"
-            audio4.play();
+            audio4.play()
             stop4.style.display = 'none'
             p4.innerHTML = `碧海`
             nowtime4 = '430'
 setTimeout(function () {
-                audio4.play();
-            }, 4000);
-setTimeout(function () {
-                audio4.play();
-            }, 8000);
+audio4.play()
+            }, 4000)
 
         }
 
