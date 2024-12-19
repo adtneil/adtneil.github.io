@@ -48,7 +48,7 @@ function timedown() {
     n = setInterval(function backtime() {
 
         nowtime--
-        console.log(nowtime)
+        //console.log(nowtime)
         time2 = Math.floor(nowtime / 60)
         time3 = nowtime % 3600 % 60
 
@@ -102,7 +102,7 @@ function timedown2() {
     m = setInterval(function backtime() {
 
         nowtime2--
-        console.log(nowtime2)
+        //console.log(nowtime2)
         time22 = Math.floor(nowtime2 / 60)
         time32 = nowtime2 % 3600 % 60
 
@@ -126,7 +126,7 @@ function timedown3() {
     o = setInterval(function backtime() {
 
         nowtime3--
-        console.log(nowtime3)
+        //console.log(nowtime3)
         time23 = Math.floor(nowtime3 / 60)
         time33 = nowtime3 % 3600 % 60
 
@@ -150,7 +150,7 @@ function timedown4() {
     pp = setInterval(function backtime() {
 
         nowtime4--
-        console.log(nowtime4)
+        //console.log(nowtime4)
         time24 = Math.floor(nowtime4 / 60)
         time34 = nowtime4 % 3600 % 60
 
