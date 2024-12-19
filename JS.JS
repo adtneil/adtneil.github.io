@@ -4,33 +4,46 @@ const btn2 = document.querySelector('.minutes15b')
 const p2 = document.querySelector('.minutes15p')
 const btn3 = document.querySelector('.minutes125b')
 const p3 = document.querySelector('.minutes125p')
+const btn4 = document.querySelector('.minutes302b')
+const p4 = document.querySelector('.minutes302p')
 const gogo = document.querySelector('.gogogoo')
 const stop1 = document.querySelector('.stopp')
 const stop2 = document.querySelector('.stopp2')
 const gogo2 = document.querySelector('.gogogoo2')
 const stop3 = document.querySelector('.stopp3')
 const gogo3 = document.querySelector('.gogogoo3')
+const stop4 = document.querySelector('.stopp4')
+const gogo4 = document.querySelector('.gogogoo4')
 const music = document.getElementById('#audio')
 let audio = new Audio('./01.mp3');
 let audio2 = new Audio('./02.mp3');
 let audio3 = new Audio('./03.mp3');
+let audio4 = new Audio('./03.mp3');
 let stopp = ''
 let stopp2 = ''
 let stopp3 = ''
+let stopp4 = ''
 let time1 = ''
 let time2 = ''
 let time3 = ''
+let time4 = ''
 let time12 = ''
 let time22 = ''
 let time32 = ''
 let time13 = ''
 let time23 = ''
 let time33 = ''
+let time14 = ''
+let time24 = ''
+let time34 = ''
 let nowtime = '1800'
 let nowtime2 = '900'
 let nowtime3 = '85'
+let nowtime3 = '304'
 let n
 let m
+let o
+let pp
 function timedown() {
     n = setInterval(function backtime() {
 
@@ -133,6 +146,30 @@ function timedown3() {
 
     }, 1000)
 }
+function timedown4() {
+    pp = setInterval(function backtime() {
+
+        nowtime4--
+        console.log(nowtime4)
+        time24 = Math.floor(nowtime4 / 60)
+        time34 = nowtime4 % 3600 % 60
+
+        time34 < 10 ? time34 = '0' + time34 : time34 = time34
+        time24 < 10 ? time24 = '0' + time24 : time24 = time24
+        p4.innerHTML = `碧海  現在時間 00:${time24}:${time34}`
+        if (nowtime4 === 0) {
+            clearInterval(o)
+            btn4.disabled = false
+            btn4.innerHTML = "star"
+            audio4.play();
+            stop4.style.display = 'none'
+            p4.innerHTML = `碧海`
+            nowtime4 = '304'
+
+        }
+
+    }, 1000)
+}
 function halfAnHour() {
 
     btn1.innerHTML = "倒數中"
@@ -202,6 +239,28 @@ function gogogo3() {
     gogo3.style.display = 'none'
     stop3.style.display = 'block'
     timedown3()
+}
+
+
+function minutes304() {
+    btn4.innerHTML = "倒數中"
+    btn4.disabled = true
+    stop4.style.display = 'block'
+    timedown4()
+}
+
+function stopppp4() {
+    stopp4 = nowtime4
+    gogo4.style.display = 'block'
+    stop4.style.display = 'none'
+    clearInterval(pp)
+
+}
+function gogogo4() {
+    nowtime4 = stopp4
+    gogo4.style.display = 'none'
+    stop4.style.display = 'block'
+    timedown4()
 
 
 }
