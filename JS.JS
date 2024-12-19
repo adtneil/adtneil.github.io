@@ -165,8 +165,8 @@ function timedown4() {
             stop4.style.display = 'none'
             p4.innerHTML = `碧海`
             nowtime4 = '430'
-setTimeout(function () {
-audio4.play()
+            setTimeout(function () {
+            audio4.play()
             }, 4000)
 
         }
