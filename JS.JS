@@ -39,7 +39,7 @@ let time34 = ''
 let nowtime = '1800'
 let nowtime2 = '900'
 let nowtime3 = '85'
-let nowtime3 = '302'
+let nowtime4 = '302'
 let n
 let m
 let o
