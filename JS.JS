@@ -158,7 +158,7 @@ function timedown4() {
         time24 < 10 ? time24 = '0' + time24 : time24 = time24
         p4.innerHTML = `碧海  現在時間 00:${time24}:${time34}`
         if (nowtime4 === 0) {
-            clearInterval(o)
+            clearInterval(pp)
             btn4.disabled = false
             btn4.innerHTML = "star"
             audio4.play();
