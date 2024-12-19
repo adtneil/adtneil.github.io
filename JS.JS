@@ -18,7 +18,7 @@ const music = document.getElementById('#audio')
 let audio = new Audio('./01.mp3');
 let audio2 = new Audio('./02.mp3');
 let audio3 = new Audio('./03.mp3');
-let audio4 = new Audio('./03.mp3');
+let audio4 = new Audio('./04.mp3');
 let stopp = ''
 let stopp2 = ''
 let stopp3 = ''
@@ -165,6 +165,12 @@ function timedown4() {
             stop4.style.display = 'none'
             p4.innerHTML = `碧海`
             nowtime4 = '302'
+setTimeout(function () {
+                audio4.play();
+            }, 6000);
+setTimeout(function () {
+                audio4.play();
+            }, 12000);
 
         }
 
