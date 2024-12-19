@@ -162,11 +162,13 @@ function timedown4() {
             btn4.disabled = false
             btn4.innerHTML = "star"
             audio4.play()
+            console.log''第一次播放')
             stop4.style.display = 'none'
             p4.innerHTML = `碧海`
             nowtime4 = '430'
             setTimeout(function () {
             audio4.play()
+            console.log''第二次播放')
             }, 4000)
 
         }
