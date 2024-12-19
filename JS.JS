@@ -39,7 +39,7 @@ let time34 = ''
 let nowtime = '1800'
 let nowtime2 = '900'
 let nowtime3 = '85'
-let nowtime4 = '302'
+let nowtime4 = '430'
 let n
 let m
 let o
@@ -164,7 +164,7 @@ function timedown4() {
             audio4.play();
             stop4.style.display = 'none'
             p4.innerHTML = `碧海`
-            nowtime4 = '302'
+            nowtime4 = '430'
 setTimeout(function () {
                 audio4.play();
             }, 4000);
