@@ -167,10 +167,10 @@ function timedown4() {
             nowtime4 = '302'
 setTimeout(function () {
                 audio4.play();
-            }, 6000);
+            }, 4000);
 setTimeout(function () {
                 audio4.play();
-            }, 12000);
+            }, 8000);
 
         }
 
