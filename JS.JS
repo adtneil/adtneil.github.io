@@ -112,7 +112,7 @@ function timedown2() {
             btn2.innerHTML = "star"
             audio2.play();
             stop2.style.display = 'none'
-            p2.innerHTML = `15分鐘`
+            p2.innerHTML = `1分25秒`
             
 
         }
@@ -138,7 +138,7 @@ function timedown3() {
             btn3.innerHTML = "star"
             audio3.play();
             stop3.style.display = 'none'
-            p3.innerHTML = `1分25秒`
+            p3.innerHTML = `15分鐘`
         }
 
     }, 1000)
