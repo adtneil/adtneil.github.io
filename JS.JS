@@ -69,7 +69,7 @@ function timedown() {
         mintime1 < 10 ? mintime1 = '0' + mintime1 : mintime1 = mintime1
         sectime1 < 10 ? sectime1 = '0' + sectime1 : sectime1 = sectime1
         p1.innerHTML = `半小時 現在時間 00:${mintime1}:${sectime1}`
-        if (nowTime1 === 0) {
+        if (nowTime1 <= 0) {
             clearInterval(n)
             btn1.disabled = false
             btn1.innerHTML = "star"
@@ -106,7 +106,7 @@ function timedown2() {
         mintime2 < 10 ? mintime2 = '0' + mintime2 : mintime2 = mintime2
         sectime2 < 10 ? sectime2 = '0' + sectime2 : sectime2 = sectime2
         p2.innerHTML = `15分鐘 現在時間 00:${mintime2}:${sectime2}`
-        if (nowTime2 === 0) {
+        if (nowTime2 <= 0) {
             clearInterval(m)
             btn2.disabled = false
             btn2.innerHTML = "star"
@@ -132,7 +132,7 @@ function timedown3() {
         mintime3 < 10 ? mintime3 = '0' + mintime3 : mintime3 = mintime3
         sectime3 < 10 ? sectime3 = '0' + sectime3 : sectime3 = sectime3
         p3.innerHTML = `1分25秒  現在時間 00:${mintime3}:${sectime3}`
-        if (nowTime3 === 0) {
+        if (nowTime3 <= 0) {
             clearInterval(o)
             btn3.disabled = false
             btn3.innerHTML = "star"
@@ -156,7 +156,7 @@ function timedown4() {
         mintime4 < 10 ? mintime4 = '0' + mintime4 : mintime4 = mintime4
         sectime4 < 10 ? sectime4 = '0' + sectime4 : sectime4 = sectime4
         p4.innerHTML = `碧海  現在時間 00:${mintime4}:${sectime4}`
-        if (nowTime4 === 0) {
+        if (nowTime4 <= 0) {
             clearInterval(pp)
             btn4.disabled = false
             btn4.innerHTML = "star"
