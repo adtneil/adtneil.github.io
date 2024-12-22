@@ -201,7 +201,7 @@ function gogogo() {
 
 
 
-function minutes15() {
+function minutes125() {
     btn2.innerHTML = "倒數中"
     btn2.disabled = true
     stop2.style.display = 'block'
@@ -224,7 +224,7 @@ function gogogo2() {
 
 }
 
-function minutes125() {
+function minutes15() {
     btn3.innerHTML = "倒數中"
     btn3.disabled = true
     stop3.style.display = 'block'
