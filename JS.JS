@@ -88,6 +88,8 @@ function timedown() {
             setTimeout(function () {
                 audio.play();
             }, 3600);
+            nowTime1 = 1800000
+
         }
 
     }, 1000)
@@ -113,7 +115,7 @@ function timedown2() {
             audio2.play();
             stop2.style.display = 'none'
             p2.innerHTML = `1分25秒`
-            
+            nowTime2 = 85000
 
         }
 
@@ -139,6 +141,7 @@ function timedown3() {
             audio3.play();
             stop3.style.display = 'none'
             p3.innerHTML = `15分鐘`
+            nowTime3 = 900000
         }
 
     }, 1000)
@@ -168,6 +171,7 @@ function timedown4() {
                 audio4.play()
                 console.log('第二次播放')
             }, 4000)
+            nowTime4 = 430000
 
         }
 
