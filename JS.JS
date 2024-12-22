@@ -105,7 +105,7 @@ function timedown2() {
 
         mintime2 < 10 ? mintime2 = '0' + mintime2 : mintime2 = mintime2
         sectime2 < 10 ? sectime2 = '0' + sectime2 : sectime2 = sectime2
-        p2.innerHTML = `15分鐘 現在時間 00:${mintime2}:${sectime2}`
+        p2.innerHTML = `1分25秒 現在時間 00:${mintime2}:${sectime2}`
         if (nowTime2 <= 0) {
             clearInterval(m)
             btn2.disabled = false
@@ -131,7 +131,7 @@ function timedown3() {
 
         mintime3 < 10 ? mintime3 = '0' + mintime3 : mintime3 = mintime3
         sectime3 < 10 ? sectime3 = '0' + sectime3 : sectime3 = sectime3
-        p3.innerHTML = `1分25秒  現在時間 00:${mintime3}:${sectime3}`
+        p3.innerHTML = `15分鐘  現在時間 00:${mintime3}:${sectime3}`
         if (nowTime3 <= 0) {
             clearInterval(o)
             btn3.disabled = false
