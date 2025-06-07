@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.content {
+            margin: 0 auto;
+            width: 500px;
+            background-color: #666;
+            border-radius: 25px;
+            padding: 30px;
+            color: #fff;
+        }
+
+        div.content p {
+            margin: 10px auto;
+        }
+
+        div.content p span.result {
+            margin-left: 20px;
+            color: #a10505;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <p>請選擇對應的幣或農作物</p>
+        <select name="desiredCoin" id="desiredCoin">
+            <option value="100000">下界幣</option>
+            <option value="10000">鑽石幣</option>
+            <option value="1000">綠寶石幣</option>
+            <option value="100">金幣</option>
+            <option value="10">鐵幣</option>
+            <option value="1">銅幣</option>
+        </select>
+        <input type="number" class="coinNum">
+        <p>材料內容</p>
+        <select name="materialCoin" id="materialCoin">
+            <option value="500">暮色西瓜</option>
+            <option value="100000">下界幣</option>
+            <option value="10000">鑽石幣</option>
+            <option value="1000">綠寶石幣</option>
+            <option value="100">金幣</option>
+            <option value="10">鐵幣</option>
+            <option value="1">銅幣</option>
+        </select>
+        <p>需要數量 <span class="result"></span></p>
+    </div>
+
+
+    <script>
+        let desiredSelect = document.getElementById("desiredCoin")
+        let coinInput = document.querySelector('.coinNum')
+        let materialSelect = document.getElementById("materialCoin")
+        let resultNum = document.querySelector('.result')
+
+        function calculateResult() {
+            const desiredCoin = + desiredSelect.value
+            const coinNum = + coinInput.value
+            const materialCoin = + materialSelect.value
+            const materialCoinName = materialSelect.options[materialSelect.selectedIndex].text;
+
+            if (isNaN(desiredCoin) || isNaN(coinNum) || isNaN(materialCoin)) {
+                resultNum.innerText = `請輸入有效數字`
+                return
+            }
+            resultNum.innerText = `${(desiredCoin * coinNum) / materialCoin}個${materialCoinName}`
+        }
+        desiredSelect.addEventListener("change", calculateResult);
+        coinInput.addEventListener("input", calculateResult);
+        materialSelect.addEventListener("change", calculateResult);
+    </script>
+</body>
+
+</html>
