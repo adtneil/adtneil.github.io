@@ -166,7 +166,7 @@ function timedown4() {
             audio4.play()
             console.log('第一次播放')
             stop4.style.display = 'none'
-            p4.innerHTML = `碧海`
+            p4.innerHTML = `777`
             setTimeout(function () {
                 audio4.play()
                 console.log('第二次播放')
@@ -272,5 +272,6 @@ function gogogo4() {
 
 
 }
+
 
 
