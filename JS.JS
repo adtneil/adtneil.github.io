@@ -158,7 +158,7 @@ function timedown4() {
 
         mintime4 < 10 ? mintime4 = '0' + mintime4 : mintime4 = mintime4
         sectime4 < 10 ? sectime4 = '0' + sectime4 : sectime4 = sectime4
-        p4.innerHTML = `碧海  現在時間 00:${mintime4}:${sectime4}`
+        p4.innerHTML = `777  現在時間 00:${mintime4}:${sectime4}`
         if (nowTime4 <= 0) {
             clearInterval(pp)
             btn4.disabled = false
@@ -171,7 +171,7 @@ function timedown4() {
                 audio4.play()
                 console.log('第二次播放')
             }, 4000)
-            nowTime4 = 425000
+            nowTime4 = 270000
 
         }
 
@@ -272,3 +272,4 @@ function gogogo4() {
 
 
 }
+
