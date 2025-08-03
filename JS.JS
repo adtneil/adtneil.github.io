@@ -48,7 +48,7 @@ let audio3 = new Audio('./03.mp3');
 
 let startime4 = 0
 let latertime4 = ''
-let nowTime4 = 425000
+let nowTime4 = 270000
 let mintime4 = ''
 let sectime4 = ''
 let stopp4 = ''
@@ -272,4 +272,5 @@ function gogogo4() {
 
 
 }
+
 
